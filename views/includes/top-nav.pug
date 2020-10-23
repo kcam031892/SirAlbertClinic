@@ -1,0 +1,49 @@
+nav.navbar.navbar-expand.navbar-light.bg-white.topbar.mb-4.static-top.shadow
+  button#sidebarToggleTop.btn.btn-link.d-md-none.rounded-circle.mr-3
+    i.fa.fa-bars
+  form.d-none.d-sm-inline-block.form-inline.mr-auto.ml-md-3.my-2.my-md-0.mw-100.navbar-search
+    div.input-group
+      input(type="text",placeholder="Search For...",aria-label="Search",aria-describedby="basic-addon2").form-control.bg-light.border-0.small
+      div.input-group-append
+        button(type="button").btn.btn-primary
+          i.fas.fa-search.fa-sm
+  ul.navbar-nav.ml-auto
+    li.nav-item.dropdown.no-arrow.d-sm-none
+      a(href="#",data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")#searchDropdown.nav-link.dropdown-toggle
+        i.fas.fa-search.fa-fw
+      div(class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in",aria-labelledby="searchDropdown")
+        form(action="",class="form-inline mr-auto w-100 navbar-search")
+          div.input-group
+            input(type="text",class="form-control bg-light border-0 small",placeholder="Search for...",aria-label="Search",aria-describedby="basic-addon2")
+            div.input-group-append
+              button(type="button").btn.btn-primary
+                i.fas.fa-search.fa-sm
+    li(class="nav-item dropdown no-arrow mx-1")  
+      a(href="",class="nav-link dropdown-toggle",id="alertsDropdown",role="button",data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")          
+        i.fas.fa-bell.fa-fw
+        span.badge.badge-danger.badge-counter 3+
+    li(class="nav-item dropdown no-arrow mx-1")  
+      a(href="",class="nav-link dropdown-toggle",id="alertsDropdown",role="button",data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")          
+        i.fas.fa-envelope.fa-fw
+        span.badge.badge-danger.badge-counter 3+
+    li(class="nav-item dropdown no-arrow")  
+      a(href="",class="nav-link dropdown-toggle",id="userDropdown",role="button",data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")
+        span(class="mr-2 d-none d-lg-inline text-gray-600 small") Valerie Luna
+        img(src="https://images.unsplash.com/photo-1560241804-02b7b1bc9d55?ixlib=rb-1.2.1&auto=format&fit=crop&w=328&q=80/60x60", alt="profile",class="img-profile rounded-circle")
+      div(class="dropdown-menu dropdown-menu-right shadow animated--grow-in",aria-labelledby="userDropdown")
+        a(href="").dropdown-item
+          i(class="fas fa-user fa-sm fa-fw mr-2 text-gray-400")
+          span Profile
+        a(href="").dropdown-item
+          i(class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400")
+          span Settings
+        a(href="").dropdown-item
+          i(class="fas fa-list fa-sm fa-fw mr-2 text-gray-400")
+          span Activity Log
+        div.dropdown-divider
+        a(href="#",data-toggle="modal",data-target="#logoutModal").dropdown-item 
+          i(class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400")
+          span Logout
+          
+
+    
